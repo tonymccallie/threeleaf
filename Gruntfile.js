@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 		less: {
 			production: {
 				options: {
-					paths: ['www/css','www/uikit'],
+					paths: ['www/css'],
 					cleancss: false,
 					compress: true,
 					sourceMap: true,
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			css: {
-				files: ['www/css/*.less','www/uikit/less/*.less'],
+				files: ['www/css/*.less'],
 				tasks: ['less'],
 				options: {
 					livereload: true
